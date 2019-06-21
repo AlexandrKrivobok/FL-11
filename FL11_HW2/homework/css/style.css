@@ -178,7 +178,8 @@ ol > li > a.text::after {
     content: "";
     width: 30px;
     height: 30px;
-    background: URL(../img/email-icon.png) no-repeat 100% 50% ;
+    background: URL(../img/email-icon.png) no-repeat;
+    background-size: 30px;
     top: 4px;
     right: 2px;
 }
