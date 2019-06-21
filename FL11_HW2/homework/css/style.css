@@ -318,6 +318,10 @@ section.blocks > div > h2 {
         position: relative;
         top: -8px;
     }
+
+    h2 + p {
+        font-style: normal;
+    }
 }
 
 @keyframes spinHorizontal {
