@@ -1,0 +1,335 @@
+body, ul, p, li, h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  background-color: #0b192f;
+}
+
+body {
+  font-family: roboto;
+  font-weight: 400;
+  margin: 0 auto;
+  width: 97%;
+}
+
+header, footer {
+  background-color: #162b4d;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  width: 70%;
+  margin-right: 20px;
+}
+
+aside {
+  width: 28%;
+}
+
+header {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 34px;
+  font-weight: 100;
+  padding: 30px 20px;
+}
+
+h1 > span {
+  color: #B71757;
+}
+
+nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  padding: 40px 30px;
+}
+
+li:hover {
+  background-color: #343a72;
+  cursor: pointer;
+}
+
+a {
+  color: #fff;
+}
+
+.post-1 {
+	background: #B71757;
+}
+.post-2 {
+	background: #0D7E71;
+}
+.post-3 {
+	background: #b1660e;
+}
+.post-4 {
+	background: #d12767;
+}
+.post-5 {
+	background: #2d95bb;
+}
+
+.post {
+  display: flex;
+  color: #fff;
+}
+
+.post-img {
+  width: 50%;
+}
+
+.post-img:hover {
+  cursor: pointer;
+  opacity: .6;
+}
+
+.post-text {
+  width: 50%;
+  display: flex;
+}
+
+.post-text:hover {
+  cursor: pointer;
+  opacity: .6;
+}
+
+.post-text_content {
+  width: 70%;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 100;
+  margin: 40px 30px 20px;
+}
+
+p {
+  font-weight: 100;
+  font-size: 13px;
+  line-height: 20px;
+  opacity: .8;
+  margin: 0 30px 30px;
+}
+
+.post-date {
+  opacity: .5;
+  width: 20%;
+  padding: 10px 15px;
+  text-align: right;
+}
+
+.post-date_day {
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.post-date_month {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.post:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.post:nth-child(even) > .post-text {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.post:nth-child(even) > .post-text > .post-date {
+  text-align: left;
+}
+
+.post--no-img > .post-img {
+  display: none;
+}
+
+.post--no-img > .post-text {
+  width: 100%;
+}
+
+.post--no-img > .post-text > .post-date {
+  width: 15%;
+}
+
+.post--no-img > .post-text > .post-text_content {
+  width: 85%;
+}
+
+.news-article {
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 20px;
+  padding: 20px 30px 0;
+}
+
+.news-article > p {
+  padding: 20px 30px;
+  margin: 0;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 100;
+}
+
+footer {
+  color: #b8b8b8;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+footer > p {
+  margin: 20px;
+}
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 920px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 60%;
+  }
+
+  aside {
+    width: 38%;
+  }
+
+  .post {
+    display: block;
+  }
+
+  .post-img {
+    width: 100%;
+  }
+
+  .post-text {
+    width: 100%;
+    display: block;
+  }
+
+  .post-text_content {
+    width: 100%;
+  }
+
+  .post-date {
+    width: auto;
+    text-align: center;
+  }
+
+  .post:nth-child(even) > .post-text {
+    text-align: left;
+  }
+  
+  .post:nth-child(even) > .post-text > .post-date {
+    text-align: center;
+  }
+
+  .post--no-img > .post-text > .post-date {
+    width: auto;
+  }
+  
+  .post--no-img > .post-text > .post-text_content {
+    width: auto;
+  }
+
+  .post--no-img > .post-text > .post-text_content > h2 {
+    margin-top: 0px;
+    padding-top: 40px;
+  }
+
+  footer {
+    display: block;
+    padding: 20px 0;
+  }
+
+  footer > p {
+    margin: 0;
+    text-align: center;
+  }
+
+  header > nav {
+    display: none;
+  }
+
+  header > h1 {
+    text-align: center;
+  }
+
+  .burger {
+    display: block;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    display: block;
+  }
+
+  main {
+    width: auto;
+    margin: 0;
+  }
+
+  aside {
+    width: auto;
+    margin-top: 20px;
+  }
+
+  
+}
+
+@media (min-width: 1400px) {
+  body {
+    width: 1400px;
+  }
+}
