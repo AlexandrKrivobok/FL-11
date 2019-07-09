@@ -39,7 +39,6 @@ Possible prize on current attempt: ${possiblePrize}$`);
                 continue;
             } else {
                 alert(`Thank you for your participation. Your prize is: ${totalPrize}$`);
-                console.log('hello');
                 continue gameLoop;
             }
         } else {
