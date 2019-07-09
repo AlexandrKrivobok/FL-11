@@ -14,7 +14,7 @@ const startMax = 9;
 const maxStep = 4;
 const prizeMultiplier = 2;
 
-loop1:
+gameLoop:
 while (confirm(`Do you want to play ${gameInvitationEnding}?`)) {
     gameInvitationEnding = 'again';
     attempts = maxAttempts;
@@ -23,7 +23,6 @@ while (confirm(`Do you want to play ${gameInvitationEnding}?`)) {
     max = startMax;
     winNumber = Math.floor(Math.random() * (max - min)) + min;
     while (attempts !== 0) {
-        console.log(winNumber);
         playerChoise = prompt(`Choose a roulette pocket number from ${min} to ${max - 1}\n
 Attempts left: ${attempts}\n
 Total prize: ${totalPrize}$\n
@@ -40,7 +39,7 @@ Possible prize on current attempt: ${possiblePrize}$`);
             } else {
                 alert(`Thank you for your participation. Your prize is: ${totalPrize}$`);
                 console.log('hello');
-                continue loop1;
+                continue gameLoop;
             }
         } else {
             possiblePrize /= prizeMultiplier;
