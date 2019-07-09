@@ -20,6 +20,7 @@ while (confirm(`Do you want to play ${gameInvitationEnding}?`)) {
     attempts = maxAttempts;
     totalPrize = 0;
     possiblePrize = startPrize;
+    thisGameMaxPrize = startPrize;
     max = startMax;
     winNumber = Math.floor(Math.random() * (max - min)) + min;
     while (attempts !== 0) {
