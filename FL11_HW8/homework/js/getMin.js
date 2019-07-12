@@ -1,10 +1,10 @@
 function getMin(...arr) {
-    let result = arr.reduce((minVal, currentNum) => {
-        if (minVal > currentNum) {
-            minVal = currentNum;
-        }
-        return minVal;
-    });
+    let result = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+      if (result > arr[i]) {
+        result = arr[i]
+      }
+    }
     return result;
 }
 
