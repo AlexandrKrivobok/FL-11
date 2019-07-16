@@ -142,7 +142,7 @@ function keys(obj) {
     }
   
     return result;
-};
+}
 
 console.log(keys({keyOne: 1, keyTwo: 2, keyThree: 3}));
 
@@ -155,6 +155,6 @@ function values(obj) {
     }
   
     return result;
-};
+}
 
 console.log(values({keyOne: 1, keyTwo: 2, keyThree: 3}));
