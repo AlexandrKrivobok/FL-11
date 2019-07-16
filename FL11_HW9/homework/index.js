@@ -106,7 +106,7 @@ function showFormattedDate(dateStr) {
     return `Date: ${month} ${day} ${year}`;
 } 
 
-console.log(showFormattedDate(new Date('2019-13-27T01:10:00'))) ;
+console.log(showFormattedDate(new Date('2019-01-27T01:10:00'))) ;
 
 function canConvertToDate(dateStr) {
     return !!new Date(dateStr).getMonth();
