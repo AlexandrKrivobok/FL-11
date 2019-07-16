@@ -90,8 +90,7 @@ function filterArray(array, func) {
             storage.push(el);
         }
     })
-    const result = storage;
-    return result;
+    return storage;
 }
 
 console.log(filterArray([2, 5, 8], function(el) {
@@ -130,12 +129,11 @@ function getAmountOfAdultPeople(data) {
     return filterArray(data, function(dataItem) {
         daysBetween(new Date(dataItem.birthday), new Date()) / year > grownUp
     }).length
- 
 }
   
 console.log(getAmountOfAdultPeople(theDataForTask8));
   
-const keys = (obj) => {
+function keys(obj) {
     const result = Array();
     for( let key in obj ) {
         if (obj.hasOwnProperty(key) ) {
@@ -148,7 +146,7 @@ const keys = (obj) => {
 
 console.log(keys({keyOne: 1, keyTwo: 2, keyThree: 3}));
 
-const values = (obj) => {
+function values(obj) {
     const result = Array();
     for( let val in obj ) {
         if (obj.hasOwnProperty(val) ) {
