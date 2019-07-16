@@ -33,8 +33,6 @@ const theDataForTask8 = [
     }
 ]
 
-console.log(new Date(theDataForTask8['birthday']));
-
 function getNumbers(str) {
     let result = [];
     for (let i = 0; i < str.length; i++) {
@@ -97,7 +95,7 @@ function filterArray(array, func) {
 
 console.log(filterArray([2, 5, 8], function(el) {
     return el > 3;
-}))  
+})) 
 
 function showFormattedDate(dateStr) {
     const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
