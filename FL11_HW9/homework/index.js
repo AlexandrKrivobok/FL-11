@@ -125,9 +125,9 @@ console.log(daysBetween(new Date('2016-03-18T00:00:00'), new Date('2016-04-19T00
 function getAmountOfAdultPeople(data) {
     const year = 365;
     const grownUp = 18;
-  
+    
     return filterArray(data, function(dataItem) {
-        daysBetween(new Date(dataItem['birthday']), new Date()) / year > grownUp
+        return daysBetween(new Date(dataItem['birthday']), new Date()) / year > grownUp
     }).length
 }
   
