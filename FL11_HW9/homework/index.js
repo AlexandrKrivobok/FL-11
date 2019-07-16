@@ -33,6 +33,8 @@ const theDataForTask8 = [
     }
 ]
 
+console.log(new Date(theDataForTask8['birthday']));
+
 function getNumbers(str) {
     let result = [];
     for (let i = 0; i < str.length; i++) {
@@ -127,34 +129,34 @@ function getAmountOfAdultPeople(data) {
     const grownUp = 18;
   
     return filterArray(data, function(dataItem) {
-        daysBetween(new Date(dataItem.birthday), new Date()) / year > grownUp
+        daysBetween(new Date(dataItem['birthday']), new Date()) / year > grownUp
     }).length
 }
   
 console.log(getAmountOfAdultPeople(theDataForTask8));
   
 function keys(obj) {
-    const result = Array();
+    const storage = Array();
     for( let key in obj ) {
         if (obj.hasOwnProperty(key) ) {
-            result.push(key);
+            storage.push(key);
         }
     }
   
-    return result;
+    return storage;
 }
 
 console.log(keys({keyOne: 1, keyTwo: 2, keyThree: 3}));
 
 function values(obj) {
-    const result = Array();
+    const storage = Array();
     for( let val in obj ) {
         if (obj.hasOwnProperty(val) ) {
-            result.push(obj[val]);
+            storage.push(obj[val]);
         }
     }
   
-    return result;
+    return storage;
 }
 
 console.log(values({keyOne: 1, keyTwo: 2, keyThree: 3}));
