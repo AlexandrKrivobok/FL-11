@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Times new roman", serif;
+}
+
+ul, li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: transparent;
+    display: block;
+}
+
+.container {
+    max-width: 900px;
+    margin: 100px auto;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    color: rgb(86, 132, 202);
+    padding-bottom: 40px;
+}
+
+.new-task {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-task_input {
+    border: 2px solid #bbb;
+    border-radius: 5px;
+    width: 800px;
+    padding: 15px;
+}
+
+.add-button {
+    border: none;
+    color: #fff;
+    background: transparent;
+}
+
+.add-button_item {
+    font-size: 40px;
+    background: #bbb;
+    border-radius: 5px;
+}
+
+.hr {
+    height: 10px;
+    background: rgba(86, 132, 202, 0.3);
+    margin: 15px 0;
+}
+
+li {
+    position: relative;
+}
+
+label {
+    position: relative;
+    top: -10px;
+    display: inline;
+    color: rgb(86, 132, 202);
+}
+
+.list-input {
+    display: none;
+    font-family: "Arial", sans-serif;
+}
+
+.checkbox-button {
+    color: #bbb;
+}
+
+.checkbox-button_item {
+    line-height: 32px;
+    font-size: 32px;
+}
+
+.list-input {
+    border: 2px solid #bbb;
+    border-radius: 5px;
+    padding: 9px;
+    width: 350px;
+    position: relative;
+    top: -12px;
+}
+
+.edit {
+    color: rgb(86, 132, 202);
+}
+
+.save {
+    color: rgb(86, 132, 202);
+}
+
+.delete {
+    color: rgb(86, 132, 202);
+    float: right;
+}
+
+.material-icons {
+    opacity: 0.6;
+}
+
+.material-icons:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.editMode {
+    height: 36px;
+}
+
+.editMode > label {
+    display: none;
+}
+
+.editMode > .list-input {
+    display: inline;
+}
+
+.editMode > button.checkbox {
+    display: none;
+}
+
+.notification {
+    color: rgb(187, 30, 30);
+    text-align: center;
+}
