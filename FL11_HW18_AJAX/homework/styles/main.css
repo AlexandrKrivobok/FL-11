@@ -1,0 +1,92 @@
+.list-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-name {
+    display: block;
+    font-size: 45px;
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.edit-form {
+    display: block;
+    float: right;
+    text-align: right;
+    padding-top: 8px;
+}
+
+.edit-field {
+    font-size: 40px;
+    height: 40px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.edit-button {
+    height: 40px;
+    width: 150px;
+    position: relative;
+    top: -5px;
+    font-size: 25px;
+    background: black;
+    border: black;
+    color: white;
+}
+
+.edit-button:hover {
+    cursor: pointer;
+}
+
+.spinner {
+    width: 100px;
+    height: 100px;
+    animation: spinner 800ms linear infinite;
+    border-color: transparent #000 transparent #000;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    left: 49%;
+    top: 49%;
+}
+
+@keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.post-container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.post-title {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.post-content {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.hidden {
+    display: none;
+}
